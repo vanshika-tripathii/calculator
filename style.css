@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background: url("/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.calculator{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.418) 0px 15px 25px;
+    background: #2b2b2bb1;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.display{
+    height: 40px;
+    width:220px;
+    border-radius: 10px;
+    background-color: #494949;
+    color: white;
+    text-align: right;
+    font-size: 38px;
+    padding: 10px;
+}
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.btn{
+    border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 10px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 2px solid rgb(223, 223, 223);
+    opacity: 0.9;
+}
+
+.numbtn{
+    background: rgb(255, 194, 82);
+}
+
+.eqbtn{
+    background: rgb(106, 203, 255);
+}
+
+.opbtn{
+    background: rgb(255, 194, 82);
+}
+
+.clrbtn{
+    background: rgb(255, 114, 82);
+}
+
+.btn:hover{
+    background: rgb(255, 182, 72);
+}
+
+.clrbtn:hover{
+    background: rgb(249, 98, 64);
+}
+
+.opbtn:hover{
+    background: rgb(253, 149, 64);
+}
+
+.eqbtn:hover{
+    background: rgb(82, 192, 250);
+}

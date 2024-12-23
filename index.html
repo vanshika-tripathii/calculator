@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="input">
+        <div class="keypad">
+            <button class="btn clrbtn" onclick="backspace()">DEL</button>
+            <button class="btn clrbtn" onclick="clearAll()">AC</button>
+            <button class="btn opbtn" onclick="btnPress('%')">%</button>
+            <button class="btn opbtn" onclick="btnPress('/')">/</button>
+
+            <button class="btn numbtn" onclick="btnPress('7')">7</button>
+            <button class="btn numbtn" onclick="btnPress('8')">8</button>
+            <button class="btn numbtn" onclick="btnPress('9')">9</button>
+            <button class="btn opbtn" onclick="btnPress('*')">x</button>
+
+            <button class="btn numbtn" onclick="btnPress('4')">4</button>
+            <button class="btn numbtn" onclick="btnPress('5')">5</button>
+            <button class="btn numbtn" onclick="btnPress('6')">6</button>
+            <button class="btn opbtn" onclick="btnPress('-')">-</button>
+
+            <button class="btn numbtn" onclick="btnPress('1')">1</button>
+            <button class="btn numbtn" onclick="btnPress('2')">2</button>
+            <button class="btn numbtn" onclick="btnPress('3')">3</button>
+            <button class="btn opbtn" onclick="btnPress('+')">+</button>
+
+            <button class="btn numbtn" onclick="btnPress('.')">.</button>
+            <button class="btn numbtn" onclick="btnPress('0')">0</button>
+            <button class="btn numbtn" onclick="btnPress('00')">00</button>
+            <button class="btn eqbtn" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
